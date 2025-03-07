@@ -1,0 +1,63 @@
+/* Hero Section */
+#hero {
+    height: 400px;
+    position: relative;
+    background: url('https://source.unsplash.com/featured/?house') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.3);
+}
+
+#carousel {
+    display: flex;
+    width: 80%;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.8s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    transition: opacity 0.5s ease;
+}
+
+.slide.active {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+button#prev-slide, button#next-slide {
+    position: absolute;
+    top: 50%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    z-index: 2;
+}
+
+button#prev-slide:hover, button#next-slide:hover {
+    background: #ff9800;
+}
+
+#prev-slide {
+    left: 20px;
+}
+
+#next-slide {
+    right: 20px;
+}

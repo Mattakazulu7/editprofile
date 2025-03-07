@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Short-Term Rental Booking</title>
+    <link rel="stylesheet" href="css/global.css">
+<link rel="stylesheet" href="css/crown.css">
+<link rel="stylesheet" href="css/hero.css">
+<link rel="stylesheet" href="css/spectacle.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/trip-profile.css">
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/calendermain.css">
+<link rel="stylesheet" href="css/certificate.css">
+<link rel="stylesheet" href="css/ratings.css">
+<link rel="stylesheet" href="css/mustbring.css">
+<link rel="stylesheet" href="css/supervision.css">
+<link rel="stylesheet" href="css/theoretical.css">
+<link rel="stylesheet" href="css/resources.css">
+<link rel="stylesheet" href="css/proofcertificate.css">
+<link rel="stylesheet" href="css/certificatehover.css">
+<link rel="stylesheet" href="css/editlockmenu.css">
+<link rel="stylesheet" href="css/editclick.css">
+<link rel="stylesheet" href="css/bring.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+
+    <!-- Crown Section -->
+    <header id="crown">
+        <div id="logo">🎒 Field Trips</div>
+        <div id="blurb">For Home Schoolers</div>
+        <div id="auth">
+            <button id="sign-in">Sign In</button>
+            <button id="sign-up">Sign Up</button>
+        </div>
+    </header>
+
+    <!-- Hero Section with Carousel -->
+    <section id="hero">
+        <button id="prev-slide">❮</button>
+        <div id="carousel">
+            <div class="slide active">Popular Experience 1</div>
+            <div class="slide">Popular Experience 1</div>
+            <div class="slide">Popular Experience 3</div>
+        </div>
+        <button id="next-slide">❯</button>
+    </section>
+
+    <!-- Spectacle Section -->
+    <section id="spectacle">
+        <input type="text" id="search" placeholder="Search stays...">
+        <select id="filter">
+            <option value="all">All</option>
+            <option value="beach">Beach</option>
+            <option value="city">City</option>
+            <option value="mountain">Mountain</option>
+        </select>
+    </section>
+
+    <!-- Main Booking Section -->
+    <main id="main">
+        <div id="calendar">
+            <h2 id="calendar-title">Pick Your Dates</h2>
+            <div id="date-grid" class="date-grid">
+                <!-- Calendar slots will be populated by JavaScript -->
+            </div>
+            
+            <div id="addon-selected-container">
+                <!-- Selected Addons will appear here -->
+            </div>
+            
+            <div id="addons-container">
+                <ul id="addons-list">
+                    <li id="addon-1" class="addon-item">Addon 1</li>
+                    <li id="addon-2" class="addon-item">Addon 2</li>
+                    <li id="addon-3" class="addon-item">Addon 3</li>
+                </ul>
+            </div>
+            <button id="book-now">Book Now</button>
+            
+            
+
+            <div id="playdate-schedule" class="info-card">
+                <h3>Schedule</h3>
+                <p><strong>Start Time:</strong> 10:00 AM</p>
+                <p><strong>End Time:</strong> 1:00 PM</p>
+                <p><strong>Itinerary:</strong></p>
+                <ul>
+                    <li>10:00 AM – Welcome and Group Warm-up</li>
+                    <li>10:30 AM – </li>
+                    <li>11:00 AM – </li>
+                    <li>11:30 AM – </li>
+                    <li>12:30 PM – </li>
+                    <li>1:00 PM – End Time</li>
+                </ul>
+            </div>
+        </div>
+        
+        
+        
+        <div id="product-profile">
+            <h2>Field Trip </h2>
+            <h1>Sunny Park Playdate Adventure</h1>
+            
+            <p id="playdate-description">Join us for a fun-filled playdate! Here’s everything you need to know about the upcoming playdate adventure.</p>
+        
+            <div id="ratings">
+                <p><strong>Company Rating:</strong> 
+                    <span class="green-label">
+                        <span class="stars" id="company-rating">
+                            <span class="star" style="width: 100%;">⭐⭐⭐⭐⭐</span>
+                        </span>
+                        <span>(5.00)</span>
+                    </span>
+                </p>
+                <p><strong>Parent Rating:</strong> 
+                    <span class="green-label">
+                        <span class="stars" id="parent-rating">
+                            <span class="star" style="width: 80%;">⭐⭐⭐⭐⭐</span>
+                        </span>
+                        <span>(4.00)</span>
+                    </span>
+                </p>
+                <p><strong>Event Rating : </strong>
+                    <span class="green-label">
+                        <span class="stars" id="event-rating">
+                            <span class="star" style="width: 100%;">⭐⭐⭐⭐⭐</span>
+                        </span>
+                        <span>(5.00)</span>
+                    </span>
+                </p>
+            </div>
+            
+
+            <div id="utility" >
+                
+                <p><strong>Location:</strong> Sunny Park Playground</p>
+                <p><strong>Duration:</strong> 3 Hours (10:00 AM – 1:00 PM)</p>
+                <p><strong>Languages:</strong> English, Spanish</p>
+            </div>
+
+            <div id="playdate-info" class="info-card">
+                <h3>What's Included</h3>
+                <ul>
+                    <li>
+                        <strong>Theoretical:</strong>
+                        <span class="theoretical-block-label-container">
+                            <span class="theoretical-block-label">Games</span>
+                            <span class="theoretical-block-label">Arts and Crafts</span>
+                            <span class="theoretical-block-label">Group play</span>
+                        </span>
+                        <span class="menu-icon">...</span>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li><a href="#"><i class="fas fa-edit"></i>Edit</a></li>
+                                <li><a href="#"><i class="fas fa-lock"></i>Lock</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Practical:</strong>
+                        <span class="theoretical-block-label-container">
+                            <span class="theoretical-block-label">storytelling</span>
+                            <span class="theoretical-block-label">music</span>
+                            <span class="theoretical-block-label">play</span>
+                        </span>
+                        <span class="menu-icon">...</span>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li><a href="#"><i class="fas fa-edit"></i>Edit</a></li>
+                                <li><a href="#"><i class="fas fa-lock"></i>Lock</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Resources:</strong>
+                        <span class="resources-block-label-container">
+                            <span class="resources-block-label">snacks</span>
+                            <span class="resources-block-label">drinks</span>
+                            <span class="resources-block-label">stationery</span>
+                        </span>
+                        <span class="menu-icon">...</span>
+                        
+                    </li>
+                    <li>
+                        <strong>Supervision:</strong>
+                        <span class="supervision-block-label-container">
+                            <span class="supervision-block-label">1 Staff Member</span>
+                            <span class="supervision-block-label">1 Parent</span>
+                            <span class="supervision-block-label">1 Volunteer</span>
+                        </span>
+                        
+                        
+                    </li>
+                    <li>
+                        <strong>Certificates & Qualifications:</strong>
+                        <span class="cert-block-label-container">
+                            <span class="cert-block-label">first aid</span>
+                            <span class="cert-block-label">Liability Insurance</span>
+                        </span>
+                        <span class="menu-icon" id="menu-icon-certificates">...</span>
+                        
+                    </li>
+
+                    <li>
+                        <strong>Must Bring:</strong>
+                        <span class="bring-block-label-container">
+                            <span class="bring-block-label">Warm Clothes</span>
+                            <span class="bring-block-label">Water Bottle</span>
+                        </span>
+                        <span class="menu-icon" id="menu-icon-bring">...</span>
+                        
+                    </li>
+                </ul>
+                <p><strong>Unlock:</strong>
+                    <span class="must-bring">
+                        <span class="item">Field Guide Badge</span>
+                        <span class="item">Parent Points</span>
+                    </span>
+                </p>
+            </div>
+            
+        
+           
+        
+            <div id="playdate-location" class="info-card">
+                <h3>Location</h3>
+                <p><strong>Where are we meeting?</strong> <span id="playdate-location-name">Sunny Park Playground</span> – A perfect spot for outdoor fun and socializing!</p>
+                <div id="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509292!2d144.95373631531673!3d-37.817209979751554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf4c9fccc1b2b1e5e!2sSunny%20Park%20Playground!5e0!3m2!1sen!2sus!4v1647425123456!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        
+            <div id="parent-info" class="info-card">
+                <h3>For Parents</h3>
+                <ul>
+                    <li><strong>Cost:</strong> $10 per child (includes snacks and activities).</li>
+                    <li><strong>Volunteers:</strong> Parent helpers are welcome! Let us know if you'd like to join.</li>
+                    <li><strong>Emergency Contact:</strong> Please ensure we have up-to-date contact information.</li>
+                </ul>
+            </div>
+        
+            <button id="book-now">Book Playdate</button>
+        </div>
+        
+        
+        
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <p>&copy; 2025 RentEase. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/addons.js"></script>
+    <script src="js/buildItinerary.js"></script>
+    <script src="js/desembleItinerary.js"></script>
+    <script src="js/checksupervision.js"></script>
+    <script src="js/proofCertificate.js"></script>
+    <script src="js/certificatehover.js"></script>
+    <script src="js/toggleeditlockmenu.js"></script>
+    <script src="js/editclick.js"></script>
+    <script src="js/toggleeditlockmenu/toggleresources.js"></script>
+    <script src="js/toggleeditlockmenu/adddeleteresource.js"></script>
+    <script src="js/toggleeditlockmenu/toggletheoretical.js"></script>
+    <script src="js/toggleeditlockmenu/togglesupervision.js"></script>
+    <script src="js/toggleeditlockmenu/togglecertificates.js"></script>
+   
+</body>
+</html>
+

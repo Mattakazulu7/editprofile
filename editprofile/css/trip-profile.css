@@ -1,0 +1,110 @@
+#trip-profile {
+    font-family: 'Arial', sans-serif;
+    padding: 40px;
+    background-color: #f9f9f9;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+#trip-profile h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    text-align: center;
+}
+
+#trip-description {
+    font-size: 1.1em;
+    color: #34495e;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Card-based sections */
+.info-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-card h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #2980b9;
+}
+
+.info-card ul, .info-card p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #34495e;
+}
+
+.info-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.info-card li {
+    margin-bottom: 10px;
+}
+
+/* Hover effect for cards */
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Book button */
+#book-now {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    font-size: 1.5em;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 30px;
+}
+
+#book-now:hover {
+    background-color: #2ecc71;
+}
+
+#book-now:active {
+    background-color: #16a085;
+}
+
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    #trip-profile {
+        padding: 20px;
+    }
+
+    .info-card {
+        padding: 15px;
+    }
+
+    #trip-profile h2 {
+        font-size: 2em;
+    }
+
+    #trip-description {
+        font-size: 1em;
+    }
+
+    #book-now {
+        font-size: 1.2em;
+    }
+}
+

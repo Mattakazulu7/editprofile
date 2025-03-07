@@ -1,0 +1,15 @@
+#ratings {
+    font-family: Arial, sans-serif;
+}
+
+.green-label {
+    background-color: green;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#ratings p {
+    margin-bottom: 10px; /* Adds space between paragraphs */
+}

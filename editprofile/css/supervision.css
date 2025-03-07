@@ -1,0 +1,28 @@
+ .supervision-block-label-container {
+      display: inline-block;
+      margin-top: 5px;
+      
+  }
+
+  .supervision-block-label {
+      display: inline-block;
+      padding: 5px 10px;
+      background-color: green;
+      color: #fff;
+      font-weight: bold;
+      border-radius: 5px;
+      text-align: center;
+       margin-left: 2px; /* Space on the left side */
+    margin-right: 2px; /* Space on the right side */
+  }
+  
+  .supervision-input {
+    display: block;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 100%;
+    max-width: 200px; /* Adjust width as needed */
+}
+

@@ -1,0 +1,31 @@
+/* Wrapper for the image and the download button */
+.certificate-image-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+/* Initially, hide the download button */
+.download-button {
+    display: none; /* Initially hidden */
+    position: absolute;
+    bottom: 10px; /* Distance from the bottom of the image */
+    right: 10px; /* Distance from the right side of the image */
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Show the download button when the wrapper (image) is hovered */
+.certificate-image-wrapper:hover .download-button {
+    display: block; /* Show button when the image is hovered */
+}
+
+/* Style for the image itself */
+.certificate-image {
+    width: 200px; /* Width of the image */
+    height: auto; /* Maintain aspect ratio */
+}
+

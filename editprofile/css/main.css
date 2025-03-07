@@ -1,0 +1,80 @@
+/* Main Section */
+#main {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+#product-profile {
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    padding: 40px;
+    width: 45%;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease;
+}
+
+
+
+#book-now {
+    padding: 15px 40px;
+    border: none;
+    background: #4CAF50;
+    color: white;
+    border-radius: 30px;
+    transition: background 0.3s ease;
+}
+
+#book-now:hover {
+    background: #ff9800;
+}
+
+#addons {
+    margin-top: 10px;
+}
+
+#addons ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.addon-item {
+    background-color: #f1f1f1;
+    padding: 8px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.addon-item:hover {
+    background-color: #f0f0f0;
+}
+
+#addon-selected-container {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    min-height: 200px;
+}
+
+
+
+
+
+/* Class to move the clicked add-on above the Book Now button */
+.addon-above {
+    position: relative;
+    top: -70px; /* Moves the clicked add-on above the Book Now button */
+    z-index: 1000;
+}
+
+/* Flex container for the calendar and product profile to prevent overlap */
+#calendar {
+    margin-bottom: 20px; /* Add space at the bottom for add-ons to stack */
+    transition: margin-bottom 0.3s ease;
+}
+

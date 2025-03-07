@@ -1,0 +1,28 @@
+/* editclick.css */
+
+.delete-x {
+    cursor: pointer;
+    color: red;
+    font-size: 16px;
+    position: absolute;
+    top: -5px; /* Adjust positioning as needed */
+    right: -10px; /* Adjust positioning as needed */
+    font-weight: bold;
+}
+
+
+
+.delete-x:hover {
+    color: darkred;
+    font-weight: bold;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,34 @@
+#calendar{
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    padding: 40px;
+    width: 45%;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease;
+}
+
+#calendar:hover, #product-profile:hover {
+    transform: scale(1.02);
+}
+
+.date-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.date-grid div {
+    padding: 15px;
+    text-align: center;
+    background: #4CAF50;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.date-grid div:hover {
+    background: #ff9800;
+}

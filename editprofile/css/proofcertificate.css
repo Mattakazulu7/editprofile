@@ -1,0 +1,30 @@
+/* Style for the image itself */
+.certificate-image {
+    width: 200px; /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */
+    position: relative; /* Position for the download button inside the image */
+}
+
+/* Initially, hide the download button */
+.download-button {
+    visibility: hidden; /* Initially hidden */
+    position: absolute;
+    bottom: 10px; /* Distance from the bottom of the image */
+    right: 10px; /* Distance from the right side of the image */
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: visibility 0s 0.3s, opacity 0.3s ease; /* Smooth fade-in effect */
+    opacity: 0; /* Initially transparent */
+}
+
+/* Show the download button when the image is hovered */
+.certificate-image:hover .download-button {
+    visibility: visible; /* Make the button visible */
+    opacity: 1; /* Fade the button in */
+    transition: visibility 0s 0s, opacity 0.3s ease; /* Smooth transition */
+}
+
